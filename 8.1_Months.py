@@ -8,3 +8,17 @@ Once the user quits, print "Goodbye!"
 '''
 
 months = "JanFebMarAprMayJunJulAugSepOctNovDec"
+
+done=False
+while not done:
+    try:
+        m=int(input("Enter a month 1-12"))
+    except ValueError:
+        print("enter an integer")
+        continue
+
+    if 0<m<13:
+        print(months[m*3-3:m*3])
+    else:
+        break
+print("thanks for using my program")

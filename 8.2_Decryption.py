@@ -12,3 +12,11 @@ along with the shift number?
 Secret_Message="Lxwp{j}~uj}rxw|*)bx~)l{jltnm)}qn)lxmn7)]qn)ox{ln)r|)\][XWP)r}q)x~*"
 
 
+for i in range(-20,21,1):
+    decrypt=""
+    for c in Secret_Message:
+        num = ord(c)
+        num+=i
+        ch=chr(num)
+        decrypt+=ch
+    print(i," : ",decrypt)
